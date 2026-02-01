@@ -1,0 +1,205 @@
+*{
+       margin: 0;
+       padding: 0;
+       scroll-behavior: smooth;
+}
+header>img{
+       width: 1920px;
+       height:950px;
+       padding-right:320px;
+}
+
+nav{
+       background-image:url(../img/nav.png);
+       height: 100px;
+       position: sticky;
+       top:0;
+       margin: 0px;
+       z-index:1000 ;
+       
+}
+nav>ul{
+       text-align: center;
+
+}
+nav>ul>li{
+       display: inline;
+       list-style-type: none;
+       padding-right:30px;
+}
+nav>ul>li>a{
+       color: rgb(255, 255, 255);
+       text-decoration: none;
+       font-weight: bold;
+       text-transform: uppercase;
+       line-height: 100px;
+       font-size: 50px;
+       -webkit-text-stroke: 1px;
+       -webkit-text-stroke-color: rgb(6, 97, 74);
+       -webkit-text-stroke-width: 2px;
+       padding:30px;
+       
+}
+
+main{
+       background-image: url(../img/background3.gif);
+       background-size: 300%;
+       background-position-x: center;
+       background-repeat: no-rpeat;
+       
+}
+section{
+       margin-left:150px;
+       margin-right: 150px;
+       
+}
+footer{
+       background-color: black;
+       height: 100px;
+
+}
+footer>p{
+       text-align: center;  
+       line-height: 100px;
+
+}
+footer>p>a{
+       color:white;
+}
+section,h2,p{
+       margin: 0px;
+}
+section,h2{
+       padding:40px;
+}
+p#stopka{}
+#parallax1{
+       margin-left: 250px;
+       height:50vh;
+       width:70%;
+       background-image:url("../img/div.gif");
+       background-size:cover;
+       background-repeat: no-repeat;
+       display:table;
+       background-attachment:fixed;
+       position: relative;
+}
+#parallax1::before{
+       content: "";
+       position: absolute;
+       inset: 0;
+       background: url("../img/overlay.png") center / cover no-repeat;
+       opacity: 1;              /* control overlay strength */
+       pointer-events: none;
+       background-size:cover;
+       height: 550px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#parallax2{
+       margin-left: 250px;
+       height:50vh;
+       width:70%;
+       background-image:url("../img/div2.gif");
+       background-size:contain;
+       display:table;
+       background-attachment:fixed;
+}
+
+@media(max-width:500px)
+{
+       nav>ul>li>a{
+              font-size:12px;
+       }
+       section,h2,p{
+       margin: 10px;
+}
+
+}
+.o1{
+       border:5px,solid black;
+       transition: 2s ease;
+       margin-left: 450px;
+       
+}
+.o1:hover{    
+       transition: 0.5s ease;
+       filter: hue-rotate(90deg);
+       transform: scale(1.2);
+}
+.o2{
+       transition:1s ease;
+       margin-left: 635px;
+       transform: scale(1.3);
+
+}
+.o2:hover{
+       border-radius:100px ;
+       transition: 1s ease;
+       filter: sepia(90%);
+       transform: scale(1.6);
+       
+}
+.o3{
+       transition:1s ease;
+       filter: opacity(0%);
+}
+.o3:hover{
+       transition:1s ease;
+       filter: opacity(100%);
+}
+.o4{
+       transition:1s ease;
+}
+.o4:hover{
+       transition: 1s ease;
+       filter: sepia(60%);
+       transform:rotate(10deg);
+       
+}
+
+.tetris {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(14, 14, 94);
+
+       
+
+  
+}
+.tetristext {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px;
+  text-align: center;
+  font-size: 75px;
+  color: darkblue;
+
+  
+}
+section>p{
+       font-size: 20px;
+       margin-right: 200px;
+       margin-left: 200px;
+}
+#musicBtn {
+  display: block;
+  margin: 10px auto;
+}
+#tetrisrozgrywka1{
+       height: 300px;
+}
+
+
+
+
